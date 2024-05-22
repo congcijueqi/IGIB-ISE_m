@@ -1,5 +1,5 @@
 # IGIB-ISE
-## For DDI task
+## For the DDI task
 ### Requirements
 
 - Python version: 3.7.10
@@ -43,7 +43,7 @@ usage example :`--tau 1.0`
 IN hyperparameter for $\text{ISE}$.  
 usage example :`--EM_NUM 20`
 
-## For regression task
+## For the molecular interaction prediction task
 
 ### Requirements
 
