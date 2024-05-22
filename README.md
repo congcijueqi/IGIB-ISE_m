@@ -42,7 +42,6 @@ usage example :`--tau 1.0`
 `--EM_NUM`
 IN hyperparameter for $\text{ISE}$.  
 usage example :`--EM_NUM 20`
-```
 
 ## For regression task
 
@@ -89,4 +88,3 @@ usage example :`--tau 1.0`
 `--EM_NUM`
 IN hyperparameter for $\text{ISE}$.  
 usage example :`--EM_NUM 20`
-```
