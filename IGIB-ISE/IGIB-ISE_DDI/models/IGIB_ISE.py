@@ -40,7 +40,7 @@ class IGIB_ISE_ModelTrainer(embedder):
 
                 # Information Bottleneck.
                 outputs, KL_Loss_1,KL_Loss_2, cont_loss_1,cont_loss_2, preserve_rate = self.model([samples[0].to(self.device), samples[1].to(self.device), masks[0].to(self.device), masks[1].to(self.device)], bottleneck = True)
-                loss = loss_function_BCE(outputs, samples[2].reshape(-1, 1).to(self.device).float()).mean()
+                loss += loss_function_BCE(outputs, samples[2].reshape(-1, 1).to(self.device).float()).mean()
                 #print(cont_loss_1)
                 #print(KL_Loss_1)
                 loss += self.args.beta_1 * KL_Loss_1
